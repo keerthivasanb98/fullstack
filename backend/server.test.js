@@ -1,8 +1,11 @@
 const request = require("supertest");
-const app = require("./server"); // Adjust the path based on your `server.js` setup
+const { app, server } = require("./server"); // Import both app & server
 
 test("Sample test", () => {
     expect(1 + 1).toBe(2);
 });
 
-module.exports = app;
+// Close the server after tests finish
+afterAll(() => {
+    server.close();
+});
