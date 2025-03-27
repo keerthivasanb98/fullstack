@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "jest"
-},
+    "test": "jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0"
   }
 }
